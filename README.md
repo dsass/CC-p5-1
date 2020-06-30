@@ -1,1 +1,1 @@
-Slides for week 1, day 1
+Slides for Day 1
