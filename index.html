@@ -1,0 +1,847 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+
+  <title>Intro to Creative Code</title>
+
+  <link rel="stylesheet" href="css/reset.css">
+  <link rel="stylesheet" href="css/reveal.css">
+  <link rel="stylesheet" href="css/theme/black.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link href="https://fonts.googleapis.com/css?family=Inconsolata&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Space+Mono&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <div class="reveal">
+    <div class="slides">
+
+      <!-- ------------- -->
+      <section class="title-slide">
+        <h3 class="title-text">Creative Code</h3>
+        <div class="sub-head">
+          <div class="sub-head-text"><span>07.06.20 - day 1</span></div>
+        </div>
+        <div class="child-slide-body">
+          <div id="anim-circles-container">
+            <div id="circle-1" class="anim-circle"></div>
+            <div id="circle-2" class="anim-circle"></div>
+            <div id="circle-3" class="anim-circle"></div>
+            <div id="circle-4" class="anim-circle"></div>
+            <div id="circle-5" class="anim-circle"></div>
+          </div>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Introductions</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <!-- <span>tell us about yourself</span> -->
+          </div>
+        </div>
+        <!-- <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>Name</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>PGP</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Where you are from</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>What are you excited to learn/create here?</span>
+              </div>
+            </li>
+          </ul>
+        </div> -->
+      </section>
+
+      <!-- ------------- -->
+      <!-- <section class="child-slide">
+        <h5>Introductions</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Icebreaker: Introduce a peer</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>Their background</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>What skills are they interested in building</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>A random fact about them</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section> -->
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Housekeeping</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>How to get help & ask questions</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Code of conduct</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>what we expect</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>Everyone is welcome here. If for some reason you don't feel welcome please speak up</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Be kind to each other. Harmful actions or words are not tolerated</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Ask questions! Help each other out! This stuff is not easy and it's ok to be confused</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What is this camp?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>what are we even doing here?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>Intro to coding</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Some drawing</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Some math 😬</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Course Overview</h5>
+
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ❅<b>Day 1</b>: Intro to p5.js ~ shapes, colors, and the mouse
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <b>Day 2</b>: Animating ~ using time, transformations, conditionals, and objects
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <b>Day 3</b>: Copy-Paste ~ arrays and loops
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <b>Day 4</b>: raNDoMneSs and noise
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                <b>Day 5</b>: Project Day!
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What are we doing today?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>what are we even doing here?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>1.5hr –> basics of p5</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>1hr –> p5 exercises</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Lunch break!</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>1hr –>Variables and interaction</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>1hr –> Longer project</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Environment Setup</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">if you have not already done so:</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>Install a modern web browser (Chrome preferred)</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Sign up for a p5 account at <a href="https://editor.p5js.org/" target="_blank">https://editor.p5js.org/</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What is p5? What is javascript?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>let's find out</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <img src="assets/p5js.svg" style='border: none; height: 100px; width: 200px; object-fit: contain'></img>
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span><b>Javascript</b> is the programming language of the web</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><b>p5.js</b>, or <b>processing</b> for the web, is a <b>library</b> that organizes javascript for creative code</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><b>p5.js</b> uses something called the <b>canvas</b> for programmatic drawing</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What can you do with p5?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Processing in the wild</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://p5js.org/examples/color-hue.html" target="_blank">Colors</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://p5js.org/examples/simulate-snowflakes.html" target="_blank">Snowflakes</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://p5js.org/examples/interaction-tickle.html" target="_blank">Tickle</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://p5js.org/examples/interaction-kaleidoscope.html" target="_blank">Kaleidoscope</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+				<section>
+					<h5>What do I do with p5?</h5>
+					<div class="sub-head">
+						<div class="sub-head-text">
+							<span>art and stuff</span>
+						</div>
+					</div>
+          <video width="45%" height="auto" style="float:left;" controls muted>
+            <source src="assets/eyeblinks.mov" type="video/mp4">
+            No Video :(
+          </video>
+          <video width="48%" height="auto" style="float:right;" controls muted>
+						<source src="assets/biorhythms.mp4" type="video/mp4">
+						No Video :(
+					</video>
+				</section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>What can you do with p5?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Processing in the wild</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <img class="child-slide-img" src="assets/patatap.gif" width="600" height="auto"/>
+          <a href="https://patatap.com/" target="_blank" >Patatap</a>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>How does p5.js work?</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>🎨 What is the canvas? 🎨</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span><code>&lt;canvas&gt;</code> is an element on your page used to draw graphics, both in 2D and 3D</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Every p5 sketch starts with the canvas, using <code>createCanvas(400, 400);</code></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Drawing on the Canvas</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>Coordinate Systems</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <img class="child-slide-img" src="https://dab1nmslvvntp.cloudfront.net/wp-content/uploads/2014/03/1393985491canvas-coordinate-space.png" width="600" height="auto"/>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Functions</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>What do they do? do they do things?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>A function is a block of code that serves a single purpose</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>A library is a set of functions</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Functions can take parameters</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://p5js.org/reference/" target="_blank">p5 documentation</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://editor.p5js.org/" target="_blank">p5 editor</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Let's make some shapes</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>what shape are you?</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>point()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>line()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>rect()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>ellipse()</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Let's look at Colors</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>no more bland shapes!</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>fill()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>noFill()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>stroke()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>noStroke()</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>strokeWeight()</span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Let's look at Colors</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">
+            <span>let's mix</span>
+          </div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+            <li>
+              <div class="list-item-container">
+                ~<span>RGB vs Hex</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://www.google.com/search?q=color+picker" target="_blank">Google Color Picker</a></span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span><a href="https://color.adobe.com/create" target="_blank">Adobe Color</a></span>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Exercise I - Ode to Mondrian</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>Recreating a classic painting</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  <img class="child-slide-img" src="https://images.fineartamerica.com/images/artworkimages/mediumlarge/1/composition-ii-in-red-blue-and-yellow-piet-mondrian-war-is-hell-store.jpg" width="350" height="auto"/>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Exercise I - Freedom of Movement</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>Recreating a classic painting</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  <img class="child-slide-img" src="https://www.newrafael.com/wp-content/uploads/2019/01/2018-stedelijk-02.jpg" width="350" height="auto"/>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Exercise II – Function practice</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>let's make some functions</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  ~<span>anytime you have repeating code – make it a function!</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>if you have slight variation – use parameters!</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>the task: make a function that draws a compound shape and repeat it with parameters</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Variables</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>They vary</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  ~<span>Keywords that hold a value</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>Define them using <code>let</code> (or <code>var</code>)</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>Variables only exist within their context – where you define them matters</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>Built in variables for mouse movement <code>mouseX</code> and <code>mouseY</code></span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>Built in variables for screen size <code>width</code> and <code>height</code></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Interaction</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>draw is a loop</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  ~<span>How is draw() different from setup()?</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>It updates!</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>60 frames per second</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Debugging</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span>draw is a loop</span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  ~<span>Errors: read them in the console below the code</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>commenting: '//' or command + '/'</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  ~<span>print()</span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+        <!-- ------------- -->
+        <section class="child-slide">
+          <h5>Exercise II - Self Portrait</h5>
+          <div class="sub-head">
+            <div class="sub-head-text">
+              <span></span>
+            </div>
+          </div>
+          <div class="child-slide-body">
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  <span><a href="https://editor.p5js.org/dsasson/sketches/OURoQyyB_" target="_blank">Self Portrait Example</a></span>
+                </div>
+              </li>
+            </ul>
+          </div>
+        </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Exercise II – The Squiggle</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">~~~~~~~</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+              <div class="list-item-container">
+                ~<span>Take 3 minutes to create and style a single shape. Go crazy with it!</span>
+              </div>
+            </li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+      <!-- ------------- -->
+      <section class="child-slide">
+        <h5>Exercise II – The Squiggle</h5>
+        <div class="sub-head">
+          <div class="sub-head-text">~~~~~~~</div>
+        </div>
+        <div class="child-slide-body">
+          <ul class="child-slide-body-list">
+              <div class="list-item-container">
+                ~<span>Pass the code for your squiggle to a classmate</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Take a look at the squiggle you were passed, ask yourself – what else could this be?</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Turn their squiggle into a sketch!</span>
+              </div>
+            </li>
+            <li>
+              <div class="list-item-container">
+                ~<span>Write a blog post with screenshots of your sketch and the original squiggle</span>
+              </div>
+            </li>
+            <ul class="child-slide-body-list">
+              <li>
+                <div class="list-item-container">
+                  <span>Tell us what you did, any challenges you faced, and anything new you explored</span>
+                </div>
+              </li>
+              <li>
+                <div class="list-item-container">
+                  <span>Thank your classmate for their contribution!</span>
+                </div>
+              </li>
+            </ul>
+          </ul>
+        </div>
+      </section>
+
+    </div>
+  </div>
+</body>
+
+<script src="lib/js/head.min.js"></script>
+<script src="js/reveal.js"></script>
+<script>
+  // ---------------------------------------------
+  init();
+
+  // ---------------------------------------------
+  let content = [
+  {
+    slideType: "title",
+    slideTitle: "Week 1: Web Skills",
+    subHeadText: "Intro to HTML & CSS"
+  },
+  {
+    slideType: "child",
+    slideTitle: "Agenda",
+    subHeadText: "what we're doing today:",
+    childBody: {
+
+    }
+  }
+  ];
+
+  // ---------------------------------------------
+  function init() {
+    Reveal.initialize({
+      dependencies: [
+      {
+        src: 'plugin/highlight/highlight.js',
+        async: true,
+        callback: function() { hljs.initHighlightingOnLoad(); }
+      }
+      ]
+    });
+
+    Reveal.configure({
+      slideNumber: true,
+      slideNumber: 'c/t'
+    });
+
+    generateSlides();
+  }
+
+  // ---------------------------------------------
+  function generateSlides() {
+    // map content to markup
+  }
+
+</script>
+
+</html>
